@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Weather Check</title>
+</head>
+
+<body>
+    <form>
+        <header class="p-3 mb-2 bg-primary bg-gradient text-white text-center">
+            <h1>Weather Dashboard</h1>
+        </header>
+
+        <aside class="d-grid gap-3 d-flex flex-auto flex-sm-column mg-6  col-md-3">
+            <span class="fw-bold">Search for a city</span>
+            <form>
+                <input type="text" id="location" placeholder="Sydney" class="p-2 bg-light border" autofocus="true" />
+                <button id="submit" class="btn btn-primary">Search</button>
+            </form>
+            <div id="SearchList" class="border-top border-secondary"></div>
+        </aside>
+        <main>
+            <container>
+                <div>
+                </div>
+                <!--   div for 5 days forecast -->
+                <div id="FC5" display: flex></div>
+            </container>
+        </main>
+
+</body>
+
+</html>
