@@ -15,24 +15,34 @@
         <header class="p-3 mb-2 bg-primary bg-gradient text-white text-center">
             <h1>Weather Dashboard</h1>
         </header>
+        <main class=" d-flex flex-auto flex-row p-2">
+            <aside class="d-grid gap-3 d-flex flex-auto flex-sm-column   col-md-3">
+                <span class="fw-bold">Search for a city</span>
+                <form id="searchForm">
+                    <input type="text" id="location" placeholder="Sydney" class="p-2 bg-light border"
+                        autofocus="true" />
+                    <button id="submit" onclick="fetchInfo()" class="btn btn-primary">Search</button>
 
-        <aside class="d-grid gap-3 d-flex flex-auto flex-sm-column mg-6  col-md-3">
-            <span class="fw-bold">Search for a city</span>
-            <form>
-                <input type="text" id="location" placeholder="Sydney" class="p-2 bg-light border" autofocus="true" />
-                <button id="submit" class="btn btn-primary">Search</button>
-            </form>
-            <div id="SearchList" class="border-top border-secondary"></div>
-        </aside>
-        <main>
-            <container>
-                <div>
+                </form>
+                <div id="SearchList" class="border-top border-secondary"></div>
+            </aside>
+            <container class="d-flex flex-auto flex-column p-4 border border-secondary col-md-9 m-3">
+
+                <div id="weatherInfo" class=" d-flex flex-auto flex-column d-grid gap-4 fs-4">
+                    <span id='regionName' class="fw-bold"></span>
+                    <span id='temp'>Hello</span>
+                    <span id='Wind'>Wind</span>
+                    <span id='humidity'>Humid</span>
+                    <span id='ui'>UI</span>
                 </div>
                 <!--   div for 5 days forecast -->
                 <div id="FC5" display: flex></div>
             </container>
         </main>
-
+        <!--   linking scripts -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!--  <script src="script.js"></script> -->
 </body>
 
 </html>
