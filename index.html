@@ -24,25 +24,68 @@
                     <button id="submit" onclick="fetchInfo()" class="btn btn-primary">Search</button>
 
                 </form>
-                <div id="SearchList" class="border-top border-secondary"></div>
-            </aside>
-            <container class="d-flex flex-auto flex-column p-4 border border-secondary col-md-9 m-3">
-
-                <div id="weatherInfo" class=" d-flex flex-auto flex-column d-grid gap-4 fs-4">
-                    <span id='regionName' class="fw-bold"></span>
-                    <span id='temp'>Hello</span>
-                    <span id='Wind'>Wind</span>
-                    <span id='humidity'>Humid</span>
-                    <span id='ui'>UI</span>
+                <div id="SearchList"
+                    class="d-grid gap-3 d-flex  flex-sm-column align-middle  border-top border-secondary ">
                 </div>
-                <!--   div for 5 days forecast -->
-                <div id="FC5" display: flex></div>
-            </container>
+            </aside>
+            <div class=" d-flex flex-auto flex-column p-2">
+
+
+                <div id="weatherInfo" class=" d-flex flex-auto flex-column d-grid gap-3 fs-4">
+                    <span id='regionName' class="fw-bold"></span>
+                    <span id='temp'></span>
+                    <span id='Wind'></span>
+                    <span id='humidity'></span>
+                    <span id='ui'></span>
+
+                </div>
+
+                <div class=" d-flex  flex-row  col-md-9 m-3">
+                    <div id="weatherInfo0" class=" d-flex flex-auto flex-wrap p-5 m-3  flex-column d-grid gap-3 fs-4">
+                        <span id='date0'></span>
+                        <span id='temp0'></span>
+                        <span id='Wind0'></span>
+                        <span id='humidity0'></span>
+
+                    </div>
+                    <div id="weatherInfo1" class=" d-flex flex-auto p-5 m-3 flex-column d-grid gap-3 fs-4">
+
+                        <span id='date1'></span>
+                        <span id='temp1'></span>
+                        <span id='Wind1'></span>
+                        <span id='humidity1'></span>
+
+                    </div>
+                    <div id="weatherInfo2" class=" d-flex flex-auto p-5 m-3  flex-column d-grid gap-3 fs-4">
+                        <span id='date2'></span>
+                        <span id='temp2'></span>
+                        <span id='Wind2'></span>
+                        <span id='humidity2'></span>
+
+                    </div>
+                    <div id="weatherInfo3" class=" d-flex flex-auto p-5 m-3  flex-column d-grid gap-3 fs-4">
+                        <span id='date3'></span>
+                        <span id='temp3'></span>
+                        <span id='Wind3'></span>
+                        <span id='humidity3'></span>
+
+                    </div>
+                    <div id="weatherInfo4" class=" d-flex flex-auto p-5 m-3  flex-column d-grid gap-3 fs-4">
+                        <span id='date4'></span>
+                        <span id='temp4'></span>
+                        <span id='Wind4'></span>
+                        <span id='humidity4'></span>
+
+                    </div>
+
+
+                    </container>
+                </div>
         </main>
         <!--   linking scripts -->
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <!--  <script src="script.js"></script> -->
+        <script src="script.js"></script>
 </body>
 
 </html>
