@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -20,13 +19,15 @@
     <main class=" d-flex flex-auto flex-row p-2">
         <aside class="d-grid gap-3 d-flex flex-auto flex-sm-column   col-md-3">
             <span class="fw-bold">Search for a city</span>
-            <form onsubmit="fetchInfo(event)" id=" searchForm">
+            <form onsubmit="fetchInfo(event)" id=" searchForm" class="p-2">
+                <span id="error" class="text-danger"></span>
                 <input type="text" id="location" placeholder="Enter a Location" class="p-2 bg-light border rounded"
                     autofocus="true" />
                 <button id="submit" type="submit" class="btn btn-primary">Search</button>
 
             </form>
-            <div id="SearchList" class="d-grid gap-3 d-flex  flex-sm-column align-middle  border-top border-secondary ">
+            <div id="SearchList"
+                class="d-grid gap-3 d-flex flex-wrap p-2 flex-sm-column align-middle  border-top border-secondary ">
             </div>
         </aside>
         <div class=" d-flex flex-auto flex-column p-2">
@@ -34,7 +35,7 @@
 
             <div id="weatherInfo" class="d-flex flex-auto flex-column d-grid gap-3 fs-5 rounded">
                 <span id='regionName' class="fw-bold"></span>
-                <img src="http://openweathermap.org/img/wn/10d@4x.png" class="card-img-top" alt="Weather description" />
+                <div class="col"> <img id='imageToday' /></div>
                 <span id='temp'></span>
                 <span id='Wind'></span>
                 <span id='humidity'></span>
@@ -42,9 +43,11 @@
 
             </div>
 
-            <div class=" d-flex  flex-wrap grid grid-cols-2  m-3">
+            <div class="d-flex flex-wrap d-grid gap-3 fs-5 rounded">
                 <div id="weatherInfo0" class="d-flex fs-6 flex-auto p-3 m-3  flex-column d-grid gap-2 rounded">
                     <span id='date0'></span>
+
+                    <div class="col"> <img id='image0' /></div>
                     <span id='temp0'></span>
                     <span id='Wind0'></span>
                     <span id='humidity0'></span>
@@ -53,6 +56,8 @@
                 <div id="weatherInfo1" class=" d-flex fs-6 flex-auto p-3 m-3  flex-column d-grid gap-2 rounded">
 
                     <span id='date1'></span>
+                    <div class="col"> <img id='image1' /></div>
+
                     <span id='temp1'></span>
                     <span id='Wind1'></span>
                     <span id='humidity1'></span>
@@ -60,6 +65,7 @@
                 </div>
                 <div id="weatherInfo2" class="d-flex fs-6 flex-auto p-3 m-3  flex-column d-grid gap-2 rounded ">
                     <span id='date2'></span>
+                    <div class="col"> <img id='image2' /></div>
                     <span id='temp2'></span>
                     <span id='Wind2'></span>
                     <span id='humidity2'></span>
@@ -67,6 +73,7 @@
                 </div>
                 <div id="weatherInfo3" class=" d-flex fs-6 flex-auto p-3 m-3  flex-column d-grid gap-2 rounded">
                     <span id='date3'></span>
+                    <div class="col"> <img id='image3' /></div>
                     <span id='temp3'></span>
                     <span id='Wind3'></span>
                     <span id='humidity3'></span>
@@ -74,6 +81,7 @@
                 </div>
                 <div id="weatherInfo4" class=" d-flex fs-6 flex-auto p-3 m-3  flex-column d-grid gap-2 rounded">
                     <span id='date4'></span>
+                    <div class="col"> <img id='image4' /></div>
                     <span id='temp4'></span>
                     <span id='Wind4'></span>
                     <span id='humidity4'></span>
