@@ -6,7 +6,7 @@
 ## Description
 <details> <summary>Desktop View</summary>
  
-![Desktop-view for homepage](assets/Demo page.png)
+![Desktop-view for homepage](assets\Demo page.png)
 
  
 **What?**
@@ -41,14 +41,10 @@ more engaging user experience.
 ## Features
 
 A repo has been created which consists all the code :
-https://github.com/Vidhi0307/Challenge1Accepted.git
+https://github.com/Vidhi0307/WeatherCheckApp
 
-All the images and styling files have been added to a folder assets.
-../assets/css/style css
- all the images used on the website are in a folder:
- ../assets/images
 
-WEBSITE LINK : https://vidhi0307.github.io/Challenge1Accepted/
+WEBSITE LINK :  https://vidhi0307.github.io/WeatherCheckApp/
  
 
  
