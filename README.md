@@ -6,8 +6,8 @@
 ## Description
 <details> <summary>Desktop View</summary>
  
-![Desktop-view for homepage](assets\Demo page.png)
-
+![Desktop-view for homepage](assets\Demo-page.png)
+</details>
  
 **What?**
  
